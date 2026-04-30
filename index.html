@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الدليل الحقيقي لخسارة الوزن</title>
+  
+  <!-- SEO & Meta Tags -->
+  <meta name="description" content="الدليل الحقيقي لخسارة الوزن - من غير حرمان، من غير لخبطة، ومن غير ما الوزن يرجع.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <style>
+    :root {
+      --bg-color: #fcfaf8; /* Warm off-white */
+      --text-main: #2d3c33; /* Deep sage text */
+      --text-muted: #5e7365; /* Muted sage text */
+      --accent-color: #88a895; /* Soft sage green */
+      --accent-hover: #739481; /* Slightly darker sage on hover */
+      --card-bg: #ffffff;
+      --border-radius: 20px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Tajawal', sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    /* Container */
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-block;
+      background-color: var(--accent-color);
+      color: white;
+      font-size: 1.25rem;
+      font-weight: 700;
+      padding: 16px 36px;
+      border-radius: 50px;
+      text-align: center;
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 8px 24px rgba(136, 168, 149, 0.4);
+      width: 100%;
+    }
+
+    .btn:hover {
+      background-color: var(--accent-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px rgba(115, 148, 129, 0.5);
+    }
+    
+    .btn:focus-visible {
+      outline: 3px solid var(--accent-hover);
+      outline-offset: 4px;
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 60px 0 40px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      margin-bottom: 16px;
+      color: var(--text-main);
+      line-height: 1.4;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: var(--text-muted);
+      margin-bottom: 40px;
+      font-weight: 500;
+    }
+
+    .hero-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: var(--border-radius);
+      box-shadow: 0 24px 48px rgba(0,0,0,0.06);
+      margin-bottom: 40px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border: 6px solid white;
+    }
+
+    /* Sections Shared */
+    section {
+      padding: 50px 0;
+    }
+
+    .section-title {
+      font-size: 1.8rem;
+      font-weight: 800;
+      text-align: center;
+      margin-bottom: 40px;
+      color: var(--text-main);
+    }
+
+    /* Learn Section */
+    .learn-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    .learn-card {
+      background-color: var(--card-bg);
+      padding: 24px;
+      border-radius: var(--border-radius);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 1px solid rgba(0,0,0,0.02);
+    }
+
+    .learn-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(0,0,0,0.06);
+    }
+
+    .icon-wrapper {
+      background-color: #f2f7f4;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--accent-color);
+    }
+
+    .learn-card p {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    /* Checklist Section */
+    .checklist {
+      background-color: var(--card-bg);
+      padding: 40px 30px;
+      border-radius: var(--border-radius);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+      border: 1px solid rgba(0,0,0,0.02);
+    }
+
+    .check-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .check-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .check-item i {
+      color: #65b882; /* Slightly more vibrant green for checks */
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .check-item p {
+      font-size: 1.15rem;
+      font-weight: 500;
+    }
+
+    /* Payment Section */
+    .payment-section {
+      background-color: #f2f7f4;
+      border-radius: var(--border-radius);
+      padding: 50px 30px;
+      margin: 20px 0;
+      text-align: center;
+    }
+
+    .payment-section .section-title {
+      margin-bottom: 30px;
+    }
+
+    .payment-steps {
+      list-style-type: none;
+      margin-bottom: 40px;
+      text-align: right;
+    }
+
+    .step-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 24px;
+      font-size: 1.15rem;
+    }
+
+    .step-number {
+      background-color: var(--accent-color);
+      color: white;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    .step-item p {
+      margin-top: 2px;
+    }
+
+    .step-item span.highlight {
+      font-weight: 800;
+      color: var(--text-main);
+      background: white;
+      padding: 4px 12px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      display: inline-block;
+      margin-top: 8px;
+    }
+
+    /* Guarantee Section */
+    .guarantee {
+      text-align: center;
+      padding: 40px;
+      background-color: transparent;
+      border: 2px dashed var(--accent-color);
+      border-radius: var(--border-radius);
+    }
+
+    .guarantee-icon {
+      color: var(--accent-color);
+      margin-bottom: 16px;
+      display: inline-flex;
+      background: white;
+      padding: 16px;
+      border-radius: 50%;
+      box-shadow: 0 8px 16px rgba(136, 168, 149, 0.15);
+    }
+
+    .guarantee h3 {
+      font-size: 1.5rem;
+      margin-bottom: 12px;
+      font-weight: 800;
+    }
+
+    .guarantee p {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 40px 0;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    /* Responsive */
+    @media (min-width: 768px) {
+      .hero {
+        padding: 80px 0 60px;
+      }
+      .hero h1 {
+        font-size: 3.5rem;
+      }
+      .hero p {
+        font-size: 1.5rem;
+        margin-bottom: 50px;
+      }
+      .section-title {
+        font-size: 2.2rem;
+      }
+      .btn {
+        width: auto;
+        padding: 18px 48px;
+        font-size: 1.3rem;
+      }
+      .payment-section {
+        padding: 60px 50px;
+      }
+      .checklist {
+        padding: 50px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>الدليل الحقيقي لخسارة الوزن</h1>
+      <p>من غير حرمان، من غير لخبطة، ومن غير ما الوزن يرجع</p>
+      
+      <img src="assets/guide_cover.png" alt="غلاف الدليل الحقيقي لخسارة الوزن" class="hero-img">
+      
+      <button class="btn" onclick="document.getElementById('payment').scrollIntoView({behavior: 'smooth'})">
+        اشتري دلوقتي 500 جنيه
+      </button>
+    </section>
+
+    <!-- What You'll Learn -->
+    <section>
+      <h2 class="section-title">إيه اللي هتتعلميه في الدليل؟</h2>
+      <div class="learn-grid">
+        <div class="learn-card">
+          <div class="icon-wrapper">
+            <i data-lucide="sparkles"></i>
+          </div>
+          <p>فهمي جسمك وسعراتك بشكل بسيط</p>
+        </div>
+        <div class="learn-card">
+          <div class="icon-wrapper">
+            <i data-lucide="utensils"></i>
+          </div>
+          <p>إزاي تاكلي الأكل اللي بتحبيه وتنزلي وزن في نفس الوقت</p>
+        </div>
+        <div class="learn-card">
+          <div class="icon-wrapper">
+            <i data-lucide="pie-chart"></i>
+          </div>
+          <p>البروتين والكارب والدهون… ومش هتخافي منهم تاني</p>
+        </div>
+        <div class="learn-card">
+          <div class="icon-wrapper">
+            <i data-lucide="calendar-days"></i>
+          </div>
+          <p>خطة 30 يوم عملية خطوة خطوة</p>
+        </div>
+        <div class="learn-card">
+          <div class="icon-wrapper">
+            <i data-lucide="scale"></i>
+          </div>
+          <p>إزاي تثبتي الوزن بعد ما توصلي</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- This Guide is for you -->
+    <section>
+      <h2 class="section-title">الدليل ده ليكي لو...</h2>
+      <div class="checklist">
+        <div class="check-item">
+          <i data-lucide="check-circle-2"></i>
+          <p>جربتي دايت قبل كده والوزن رجع</p>
+        </div>
+        <div class="check-item">
+          <i data-lucide="check-circle-2"></i>
+          <p>حاسة إن الموضوع معقد ومش عارفة تبدئي من فين</p>
+        </div>
+        <div class="check-item">
+          <i data-lucide="check-circle-2"></i>
+          <p>تعبتي من الحرمان والأكل المسلوق</p>
+        </div>
+        <div class="check-item">
+          <i data-lucide="check-circle-2"></i>
+          <p>عايزة تخسي من غير ما حياتك تقف</p>
+        </div>
+        <div class="check-item">
+          <i data-lucide="check-circle-2"></i>
+          <p>عايزة نتيجة تثبت مش بس تنزل</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Payment Section -->
+    <section id="payment">
+      <div class="payment-section">
+        <h2 class="section-title">كيفية الشراء</h2>
+        <ul class="payment-steps">
+          <li class="step-item">
+            <div class="step-number">1</div>
+            <div>
+              <p>السعر: <span class="highlight">500 جنيه بس</span></p>
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-number">2</div>
+            <div>
+              <p>ابعتي الفلوس على InstaPay على الرقم/الاسم: <br><span class="highlight" dir="ltr">[INSTAPAY_USERNAME]</span></p>
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-number">3</div>
+            <div>
+              <p>بعد الدفع ابعتي screenshot للواتساب: <br><span class="highlight" dir="ltr">[WHATSAPP_NUMBER]</span></p>
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-number">4</div>
+            <div>
+              <p>هيتبعتلك الدليل فورًا</p>
+            </div>
+          </li>
+        </ul>
+        <a href="#payment" class="btn">ادفعي دلوقتي عبر InstaPay</a>
+      </div>
+    </section>
+
+    <!-- Guarantee Section -->
+    <section>
+      <div class="guarantee">
+        <div class="guarantee-icon">
+          <i data-lucide="shield-check" style="width: 40px; height: 40px; stroke-width: 1.5px;"></i>
+        </div>
+        <h3>ضمان راحة البال</h3>
+        <p>لو خلال 24 ساعة من استلام الدليل حسيتي إنه مش مناسبك، هنرجعلك فلوسك كاملة. من غير أسئلة.</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2026 الدليل الحقيقي. جميع الحقوق محفوظة.</p>
+    </footer>
+
+  </div>
+
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+  </script>
+</body>
+</html>
